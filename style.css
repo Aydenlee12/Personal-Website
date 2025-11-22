@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    font-family: "Popping";
+    font-family: 'Poppins', sans-serif;
 
 }
 :root{
@@ -48,7 +48,7 @@ body{
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.3 ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .logo:hover{
     transform: scale(1.1);
@@ -75,7 +75,7 @@ span{
 
 .navbar a:hover{
     color: var(--main-color);
-    border-bottom: 3px, solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 
 }
 
@@ -97,10 +97,10 @@ span{
 }
 
 .gradient-btn:hover{
-    transform: scale(1);
+    transform: scale(1.05);
 }
 
-sections{
+section{
     min-height: 100vh;
     padding: 10rem 15%;
 
@@ -227,3 +227,339 @@ sections{
     color: black;
 }
     
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    padding: 8rem 15%;
+    background-color: var(--second-bg-color);
+    flex-wrap: wrap;
+}
+
+.about-img img{
+    width: 32rem;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+}
+
+.about-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 30px var(--main-color),
+                0 0 40px var(--main-color);
+}
+
+.about-content{
+    max-width: 60rem;
+}
+
+.about-content h2{
+    font-size: 6rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.about-content p{
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.about-content .btn{
+    margin-top: 3rem;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin-bottom: 5rem;
+}
+
+.services{
+    padding: 8rem 12%;
+    background-color: transparent;
+}
+
+.services h2{
+    color: var(--text-color);
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 2.5rem;
+}
+
+.services-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 360px;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: 0.4s ease-in-out;
+    padding: 2.4rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.services-box:hover{
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.services-box:hover .services-info i,
+.services-box:hover .services-info h4,
+.services-box:hover .services-info p{
+    color: var(--main-color);
+}
+
+.services-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.services-info i{
+    font-size: 6rem;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.services-info h4{
+    font-size: 3.5rem;
+    margin: 1.5rem 0;
+    font-weight: 800;
+    color: white;
+}
+
+.services-info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: white;
+}
+
+.projects{
+    padding: 8rem 12%;
+    background-color: var(--second-bg-color);
+}
+
+.project-section{
+    margin-bottom: 6rem;
+}
+
+.project-category{
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.projects-box{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    gap: 3rem;
+    row-gap: 4rem;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    border-radius: 2.5rem;
+    border: 4px solid var(--main-color);
+    padding: 2.4rem;
+    gap: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover{
+    box-shadow: 0 0 15px var(--main-color),
+                0 0 20px var(--main-color);
+    transform: scale(1.03);
+}
+
+.project-card img{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    border: 2px solid var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover img{
+    transform: scale(1.05);
+}
+
+.project-placeholder{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, var(--second-bg-color) 0%, var(--bg-color) 100%);
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project-card h3{
+    font-size: 2.5rem;
+}
+
+.project-card p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.contacts{
+    padding: 8rem 15%;
+    background-color: var(--bg-color);
+}
+
+.contacts h2{
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.contacts form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.input-box{
+    flex: 1;
+    min-width: 30rem;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    resize: none;
+    transition: 0.3s ease-in-out;
+}
+
+.input-box input:focus{
+    outline: none;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.input-box input::placeholder{
+    color: #999;
+}
+
+.input-group-2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.input-group-2 textarea{
+    width: 100%;
+    padding: 1.8rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    resize: none;
+    min-height: 20rem;
+    transition: 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-group-2 textarea:focus{
+    outline: none;
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.input-group-2 textarea::placeholder{
+    color: #999;
+}
+
+.input-group-2 .btn{
+    align-self: center;
+    cursor: pointer;
+    border: none;
+}
+
+.footer{
+    background-color: var(--second-bg-color);
+    padding: 5rem 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer .social-icons{
+    margin: 0;
+    align-self: center;
+    justify-content: center;
+}
+
+.footer .social-icons a{
+    margin: 0 1rem;
+}
+
+.footer .list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .list a{
+    font-size: 2.4rem;
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+}
+
+.footer .list a:hover{
+    color: var(--main-color);
+    transform: translateY(-5px);
+}

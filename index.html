@@ -13,19 +13,19 @@
             <a href="#home" class="logo">
                 Ayden <span>Lee</span>
             </a>
-            <i class="bs bx-menu" id="menu-icon"></i>
+            <i class="bx bx-menu" id="menu-icon"></i>
 
             <nav class="navbar">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
-                <a href="#service">Services</a>
+                <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
                 <a href="#contacts">Contacts</a>
             </nav>
             <button class="gradient-btn">Contact Me</button>
         </header>
 
-        <sections class="home" id="home">
+        <section class="home" id="home">
             <div class="home-content">
                 <h1> Hello, It's <span>Ayden</span></h1>
                 <h3>I am <span> Web Developer</span></h3>
@@ -51,15 +51,181 @@
 
                 <div class="btn-group">
                     <a href="#" class="btn">Hire</a>
-                    <a href="contact" class="btn">Contacts</a>
+                    <a href="#contacts" class="btn">Contacts</a>
                 </div>
             </div>
 
             <div class="home-img">
-                <img src="/images/Ayden.jpg" atl="">
+                <img src="/images/Ayden.jpg" alt="picture of Ayden">
             </div>
-        </sections>
+        </section>
 
-        <script src="srcipt.js"></script>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="/images/Ayden.jpg" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2>About <span>Me</span></h2>
+                <p>
+                    I'm a dedicated web developer focused on building immersive, user-friendly digital experiences.
+                    From clean UI design to performant front-end code, I love turning complex ideas into intuitive products.
+                    When I'm not coding, I'm exploring new tools to push what's possible on the web.
+                </p>
+                <a href="/resume/Ayden Lee resume 1.1.pdf" class="btn">Resume</a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+           <h2 class="heading">My <span>Services</span></h2>
+
+           <div class="services-container">
+                <div class="services-box">
+                    <div class="services-info">
+                        <i class="bx bxl-figma"></i>
+                        <h4>UI / UX Design</h4>
+                        <p>I create clean, modern product experiences rooted in accessibility and thoughtful interaction design.</p>
+                    </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-info">
+                        <i class="bx bxl-code"></i>
+                        <h4>Frontend Development</h4>
+                        <p>From pixel-perfect layouts to subtle motion, I build performant interfaces with modern web stacks.</p>
+                    </div>
+                </div>
+
+                <div class="services-box">
+                    <div class="services-info">
+                        <i class="bx bx-data"></i>
+                        <h4>Backend Development</h4>
+                        <p>I architect reliable APIs and data flows that keep apps fast, secure, and easy to scale.</p>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="heading">My <span>Projects</span></h2>
+            
+            <div class="project-section">
+                <h3 class="project-category">Beginner</h3>
+                <div class="projects-box">
+
+                    <div class="project-card">
+                        <img src="/images/iphoneCalculator.png" alt="iPhone Calculator Project">
+                        <h3>Iphone-Calculator</h3>
+                        <p>A fully functional calculator app with an iPhone-inspired design and smooth user interface.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="/images/weatherApp.webp" alt="Weather App Project">
+                        <h3>Weather-App</h3>
+                        <p>Real-time weather application that fetches current conditions and forecasts using API integration.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="/images/ToDOList.jpg" alt="To-Do List Project">
+                        <h3>To-Do-List</h3>
+                        <p>Interactive task management app with add, delete, and mark-complete functionality.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-section">
+                <h3 class="project-category">Advanced</h3>
+                <div class="projects-box">
+                    <div class="project-card">
+                        <div class="project-placeholder">Coming Soon</div>
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack e-commerce solution with payment integration, user authentication, and admin dashboard.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-placeholder">Coming Soon</div>
+                        <h3>Social Media Dashboard</h3>
+                        <p>Real-time analytics dashboard with data visualization and user engagement tracking features.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-placeholder">Coming Soon</div>
+                        <h3>AI Chat Application</h3>
+                        <p>Intelligent chatbot powered by machine learning with natural language processing capabilities.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h2 class="heading">Contact <span>Me</span></h2>
+            <form action="https://formspree.io/f/myzvkllk" method="POST">
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" name="_replyto" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="/icons/github.png">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a href="/icons/linkedin.png">
+                    <i class="bx bxl-linkedin-square"></i>
+                </a>
+
+                <a href="/icons/instagram.jpg">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+
+                <a href="/icons/twitter.png">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
